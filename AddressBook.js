@@ -117,10 +117,17 @@ let numOfContacts = contactsArr.length;
 console.log("Number of Contacts in the AddressBook: "+numOfContacts);
 
 //UC-7 To prevent duplicate entry in the Array
-const addressbook4 = new AddressBook("Rakesh", "Kumar", "Buxar", "Ara", "Bihar", "802134", "+61 3017856780", "rak.p@gmail.com");
+const addressbook4 = new AddressBook("Rakesh", "Kumar", "Buxar", "Arah", "Bihar", "802134", "+61 3017856780", "rak.p@gmail.com");
 if(!contactsArr.some(el => el._firstname == "Rakesh"))
  contactsArr.push( addressbook4);
 else
 console.log("Value already Exists!");
 
 console.log("Unique Array: ",contactsArr);
+
+//UC-8 To check for the Person in the Address Book 
+let checkCity = contactsArr.filter((e) => e._city == 'Kansas');
+console.log("Contact from the addressBook as per Given city: ",checkCity);
+
+let checkState = contactsArr.filter((e) => e._state == 'Kentucky');
+console.log("Contact from the addressBook as per given state: ",checkState);	
