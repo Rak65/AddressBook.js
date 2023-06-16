@@ -81,3 +81,19 @@ class AddressBook {
                     ", phoneNumber = " + this.phoneNumber + ", emailId = " + this.emailId;
     }
 }
+//UC-3
+let contactsArr = new Array();   
+const addressbook = new AddressBook("Mark", "Wood", "Saintzeus", "Kansas", "Missouri", "100245", "+01 5690125689", "mark.wood@orkut.com");
+contactsArr.push(addressbook);
+
+const addressbook2 = new AddressBook("Hope", "Launther", "Victorhall", "Frankfurt", "Kentucky", "100461", "+01 5213409871", "taylor.l@google.com");
+contactsArr.push(addressbook2);
+
+const addressbook3 = new AddressBook("Hope", "Tyson", "Crossmall", "Blueminton", "Indiana", "430016", "+81 7801456780", "hope.ty@gmail.com");
+contactsArr.push(addressbook3);
+
+//UC-3 To store contacts in AddressBook Array
+console.log(contactsArr.length);
+for (var i = 0; i < contactsArr.length; i++) {
+    console.log(contactsArr[i]);
+}
