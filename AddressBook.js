@@ -69,7 +69,7 @@ class AddressBook {
 
     get emailId() { return this._emailId; }
     set emailId(emailId) {
-            let pattern8 = RegExp('^[A-Z a-z 0-9]+([._+-][0-9 a-z A-Z]+)*@[0-9 a-z A-Z]+.[a-z A-Z]{2,3}([.][a-z A-Z]{2})*$');
+            let pattern8 = RegExp('^[A-Za-z0-9]+([._+-][0-9 a-z A-Z]+)*@[0-9 a-z A-Z]+.[a-z A-Z]{2,3}([.][a-z A-Z]{2})*$');
             if (pattern8.test(emailId))
                     this._emailId = emailId;
             else throw 'EmailId is Incorrect!';
