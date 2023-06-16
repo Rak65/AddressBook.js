@@ -115,3 +115,12 @@ console.log("New Array After Delete: ",contactsArr);
 //UC-6 To find the Number of contacts in the array
 let numOfContacts = contactsArr.length;
 console.log("Number of Contacts in the AddressBook: "+numOfContacts);
+
+//UC-7 To prevent duplicate entry in the Array
+const addressbook4 = new AddressBook("Rakesh", "Kumar", "Buxar", "Ara", "Bihar", "802134", "+61 3017856780", "rak.p@gmail.com");
+if(!contactsArr.some(el => el._firstname == "Rakesh"))
+ contactsArr.push( addressbook4);
+else
+console.log("Value already Exists!");
+
+console.log("Unique Array: ",contactsArr);
