@@ -131,3 +131,10 @@ console.log("Contact from the addressBook as per Given city: ",checkCity);
 
 let checkState = contactsArr.filter((e) => e._state == 'Kentucky');
 console.log("Contact from the addressBook as per given state: ",checkState);	
+
+//UC-9 To View Person by city or State
+let checkkCity = contactsArr.filter((e) => e._city == 'Arah');
+console.log("Contact from the addressBook as per Given city: ",checkkCity);
+
+let checkkState = contactsArr.filter((e) => e._state == 'Bihar');
+console.log("Contact from the addressBook as per given state: ",checkkState);
