@@ -97,3 +97,13 @@ console.log(contactsArr.length);
 for (var i = 0; i < contactsArr.length; i++) {
     console.log(contactsArr[i]);
 }
+
+//UC-4 To update the contact in the array
+let result = contactsArr.filter((e) => e._firstname == 'Hope');
+console.log(result);
+
+if (result && result.length > 0) {
+    result[0]._firstname = 'Taylor';
+    result[0]._address = 'Newvilla';
+}
+console.log("New Array after Updation: ",contactsArr);
